@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { Dialog } from '@mui/material';
 import { useSearchParams } from 'react-router-dom';
-import { useGetPokemon } from 'src/hooks/useGetPokemon';
+import { useGetPokemon } from '../../hooks/useGetPokemon';
 import clsx from 'clsx';
 
 export interface PokemonDetailsDialogProps {
