@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { SearchBox } from '../SearchBox';
+import '@testing-library/jest-dom';
 
 describe('SearchBox', () => {
   const mockPokemons = [
@@ -17,7 +18,8 @@ describe('SearchBox', () => {
       fleeRate: 0.1,
       maxCP: 118,
       maxHP: 80,
-      image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'
+      image:
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
     },
     {
       id: '2',
@@ -32,7 +34,8 @@ describe('SearchBox', () => {
       fleeRate: 0.07,
       maxCP: 241,
       maxHP: 150,
-      image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png'
+      image:
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png',
     },
     {
       id: '3',
@@ -47,8 +50,9 @@ describe('SearchBox', () => {
       fleeRate: 0.05,
       maxCP: 3318,
       maxHP: 250,
-      image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png'
-    }
+      image:
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png',
+    },
   ];
 
   it('renders search input with placeholder', () => {

@@ -55,6 +55,7 @@
     "@types/jest": "^26.0.15",
     "babel-jest": "^30.0.2",
     "jest": "^30.0.2",
+    "jest-dom": "^4.0.0",
     "jest-environment-jsdom": "^30.0.2",
     "prettier": "^3.5.3",
     "react-test-renderer": "^19.1.0"
